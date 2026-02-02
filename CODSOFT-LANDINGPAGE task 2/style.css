@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00ffd5;
+}
+
+.hero {
+  background: linear-gradient(to right, #333, #555);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: #00ffd5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.features {
+  padding: 50px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.about, .contact {
+  background: white;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hero {
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.4);
+  display: inline-block;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.card {
+  background: linear-gradient(to bottom, #ffffff, #e3f2fd);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background: #00ffd5;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
